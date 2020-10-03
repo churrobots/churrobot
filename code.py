@@ -5,7 +5,7 @@ from adafruit_circuitplayground.bluefruit import cpb
 # You can use 'crickit' to control the Crickit robotics board.
 try:
     from adafruit_crickit import crickit
-except:
+except Exception as err:
     print("WARNING:", err)
     print("WARNING: could not connect to the Crickit, booting into test mode")
     from team8048 import mock_crickit as crickit
