@@ -3,7 +3,12 @@
 from adafruit_circuitplayground.bluefruit import cpb
 
 # You can use 'crickit' to control the Crickit robotics board.
-from adafruit_crickit import crickit
+try:
+    from adafruit_crickit import crickit
+except:
+    print("WARNING:", err)
+    print("WARNING: could not connect to the Crickit, booting into test mode")
+    from team8048 import mock_crickit as crickit
 
 # Use our custom team libraries to mimic the real FRC libraries for Buttons and Commands.
 # You can use 'smartphone' to access the Bluefruit Connect app on iPhone or Android.
