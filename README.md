@@ -1,4 +1,9 @@
-# Installation instructions
+# Connecting your iPhone or Android to the Circuit Playground
+
+* iPhone: download [Bluefruit Connect for iOS](https://apps.apple.com/us/app/adafruit-bluefruit-le-connect/id830125974)
+* Android: download [Bluefruit Connect for Android](https://play.google.com/store/apps/details?id=com.adafruit.bluefruit.le.connect)
+
+# Coaches guide to preparing a Circuit Playground for students
 
 1. Plug in the Circuit Playground
 2. Double click the center "reset" button
@@ -10,7 +15,3 @@
 7. Drag the `code.py` file to the ciruit playground mount
 8. Celebrate 🎉
 
-# Connecting your iPhone or Android to the Circuit Playground
-
-* iPhone: download [Bluefruit Connect for iOS](https://apps.apple.com/us/app/adafruit-bluefruit-le-connect/id830125974)
-* Android: download [Bluefruit Connect for Android](https://play.google.com/store/apps/details?id=com.adafruit.bluefruit.le.connect)
