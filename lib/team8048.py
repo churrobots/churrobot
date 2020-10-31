@@ -244,8 +244,10 @@ def _tick(expected_seconds_per_tick):
 def add_perpetual_command(callback):
     Command(on_execute=callback)._activate()
 
-def run(cycles_per_second=30):
+def run(cycles_per_second=30, device_name=None):
     ble = BLERadio()
+    if device_name:
+        ble.name = device_name
     uart = UARTService()
     advertisement = ProvideServicesAdvertisement(uart)
     expected_seconds_per_tick = 1 / cycles_per_second
